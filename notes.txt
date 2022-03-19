@@ -1,0 +1,14 @@
+npm init -y
+npm install express @faker-js/faker -- install faker
+
+
+ SERVER.js
+const { faker } = require('@faker-js/faker');
+const express = require("express");
+const app = express();
+const port = 8000;
+
+
+// bottom
+
+app.listen( port, () => console.log(`Listening on port: ${port}`))
